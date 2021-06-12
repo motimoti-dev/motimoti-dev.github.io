@@ -1,1 +1,65 @@
-最初のコミット
+<!--
+Hi, this is moti page'html
+
+This code is the author's copyrighted work.
+All copying and unauthorized use are prohibited
+If you have any questions please send us a direct message on Twitter
+This page is a parody and fiction of MVNO.
+Twitter @motimoti_dev
+-->
+<html>
+<head>
+    <meta name="viewport" content="width=width=480,initial-scale=1">
+    <title>もちさん、こちら。</title>
+    <meta name="robots" content="index, follow"/>
+    <meta name="description" content="もちの活動履歴をまとめました。">
+    <!--todo サイトのogタグ-->
+    <!--todo サイトの通知-->
+    <!-- ファビコン -->
+    <link rel="icon" href="images/top-logo.png">
+    <!-- スマホ用アイコン -->
+    <link rel="apple-touch-icon" sizes="160x160" href="images/top-logo.png">
+    <!--search console-->
+    <meta name="google-site-verification" content="F8G5_s-gxvR3bmyBsLf4rsnJyCjDufxTIgFxtEQlFZE" />
+    <!-- Windows用アイコン -->
+    <meta name="application-name" content="もちの足跡"/>
+    <meta name="msapplication-square70x70logo" content="images/top-logo.png"/>
+    <meta name="msapplication-square150x150logo" content="images/top-logo.png"/>
+    <meta name="msapplication-wide310x150logo" content="images/top-logo.png"/>
+    <meta name="msapplication-square310x310logo" content="images/top-logo.png"/>
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="msapplication-TileColor" content="#FAA500"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="script/app.js"></script>
+</head>
+<body>
+    <header><a href="https://gootal-mobile.web.app/"><img src="images/header.png"></a><div class="barger-icon" onclick="modalopen(0)"><img src="images/barger-icon.png"></div></header>
+    <main>
+        <article>
+             <div onclick="modalopen(1)">
+                <h2>もち🍣🍊<br><b style="font-size:1.8rem;color:#ffafdb">もちさんです</b></h2>
+                <div style="background:white;padding:4%;margin:0 0 4% 0;">
+                    <h3 style="font-size:2REM;margin:0">@motimoti_dev</h3>
+                    <img src="images/top-logo.png" width="60%" style="margin:0 20%;border-radius:50%;box-shadow: 0 10px 25px 0 rgba(0, 0, 0,.1);">
+                    <p style="color:#ff008c;font-size:1.4rem;text-align:center;font-weight:bold;">暇人（ひまんちゅ）</p>
+                </div>
+            </div>
+            
+        </article>
+    </main>
+    <a href="#top" class="page_top"><img src="images/mini-up-icon.png" class="up-icon"></a>
+    
+    <div class="modal-black modal-block hide modals" onclick="modalclose()"></div>
+    <aside class="modal-parent hide modals">
+        <div class="modal modal-block"onclick="javascript:void(0);">
+            <h2 style="margin:1rem 0;font-size:2rem;text-align:left;" id="modal-title"></h2>
+            <p id="modal-text"></p>
+            <a target="blank" id="modal-link">
+                <img src="" class="moti-modal-icon" id="modal-image">
+            </a>
+            <div class="modal-bottom" onclick="modalclose()">戻る</div>
+        </div>
+    </aside>
+    <footer><p style="text-align:center">Copy right©<span onclick="modalopen(0)">もち</span></p></footer>
+</body>
+</html>
