@@ -27,24 +27,78 @@ Twitter @motimoti_dev
     <meta name="msapplication-square150x150logo" content="images/top-logo.png"/>
     <meta name="msapplication-wide310x150logo" content="images/top-logo.png"/>
     <meta name="msapplication-square310x310logo" content="images/top-logo.png"/>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-top.css">
     <meta name="msapplication-TileColor" content="#FAA500"/>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="script/app.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+<style>
+    article{
+        
+    }
+    @font-face {
+        font-family: 'corp';
+        src: url(fonts/corp.ttf);
+    }
+    
+    body {
+        font-family: corp;
+        background:black;
+    }
+</style>
 <body>
-    <header><a href="https://gootal-mobile.web.app/"><img src="images/header.png"></a><div class="barger-icon" onclick="modalopen(0)"><img src="images/barger-icon.png"></div></header>
+    <header>
+        <a href="https://gootal-mobile.web.app/"><img src="images/header.png"></a><div class="barger-icon" onclick="modalopen(0)"><img src="images/barger-icon.png"></div>
+    </header>
     <main>
         <article>
-             <div onclick="modalopen(1)">
-                <h2 style="margin-bottom:0;">もち🍣🍊<br><b style="font-size:1.8rem;color:#ff8017;">もちさんです</b></h2>
-                <div style="background:white;padding:4%;margin:0 0 4% 0;">
-                    <h3 style="font-size:2REM;margin:0">@motimoti_dev</h3>
-                    <img src="images/moti.jpg" width="60%" style="margin:0 20%;border-radius:50%;box-shadow: 0 10px 25px 0 rgba(0, 0, 0,.1);">
-                    <p style="color:#ff8800;font-size:1.4rem;text-align:center;font-weight:bold;">暇人（ひまんちゅ）</p>
+            <h1 style='z-index: 0;
+            padding: 0 10vw;
+            position: static;
+            margin-left: 0vw;
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none;'>
+                <div style='margin:20vh 0;height: 57vh;position: relative;'>
+                    <span style="color:white;font-size: 13vw;letter-spacing: 0.02em;margin-bottom: 10vw;" class='text2'>
+                        何でもやる人
+                    </span>
+                    <span style="color:white;font-size: 13vw;letter-spacing: 0.02em;margin-bottom: 10vw;" class='text3'>
+                        なんでも屋
+                    </span>
+                    <p style="font-family: sans-serif;font-size:8vw;letter-spacing: 0.02em;line-height: 1.4;margin:1vw 0;color: #111;-webkit-text-stroke: 1px #fff;text-stroke: 1px #fff;font-weight:bold;" class='text2'>
+                        もちといいます。
+                    </p>
+                    <p style='margin:1vw 0;font-size: 1.8rem;letter-spacing: 0.01em;font-family: "Objective", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;color:white;' class='text3'>
+                        Hi everyone.I'm utility person,<br>I wish you would know me.
+                    </p>
                 </div>
-            </div>
-            
+                
+            </h1>
+            <h2  style="color:white;font-size: 13vw;letter-spacing: 0.02em;margin-bottom: 10vw;font-weight:500;">
+                暇人だから<br>
+                できること
+            </h2>
+            <script>
+ScrollReveal().reveal('.text1', { 
+  duration: 1600, 
+  scale: 4,
+  reset: true
+});
+ScrollReveal().reveal('.text2', { 
+  duration: 1600, 
+  origin: 'left', 
+  distance: '50px',
+  reset: true   
+});
+ScrollReveal().reveal('.text3', { 
+  duration: 1600, 
+  origin: 'right', 
+  distance: '50px',
+  reset: true   
+});
+            </script>
         </article>
     </main>
     <a href="#top" class="page_top"><img src="images/mini-up-icon.png" class="up-icon"></a>
@@ -60,6 +114,10 @@ Twitter @motimoti_dev
             <div class="modal-bottom" onclick="modalclose()">戻る</div>
         </div>
     </aside>
-    <footer><p style="text-align:center">Copy right©<span onclick="modalopen(0)">もち</span></p></footer>
+    <footer>
+        <p style="text-align:center">
+            Copy right©<span onclick="modalopen(0)">もち</span>
+        </p>
+    </footer>
 </body>
 </html>
