@@ -84,7 +84,6 @@ Twitter @motimoti_dev
     }
     .tab1 div{
         margin:20vh 0 0 0;
-        height:57vh;
         position:relative;
     }
     span, p{
@@ -113,25 +112,13 @@ Twitter @motimoti_dev
         font-family:"Objective","游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",sans-serif;
     }
 </style>
-<body>
-    <header>
-        <a href="https://gootal-mobile.web.app/"><img src="images/header.png"></a><div class="barger-icon" onclick="modalopen(0)"><img src="images/barger-icon.png"></div>
-    </header>
+<body><header><a href="https://gootal-mobile.web.app/"><img src="images/header.png"></a><div class="barger-icon" onclick="modalopen(0)"><img src="images/barger-icon.png"></div></header>
     <div id='scrolltab'>
-        <div class='stab tab1'>
-            <h1>
-                <div>
-                    <span class='text2 tab1span1'>何でもやる人</span>
-                    <span class='text3 tab1span1'>なんでも屋</span>
-                    <p class='text2 tab1p1'>もちといいます。</p>
-                    <p class='text3 tab1p2'>Hi everyone.I'm utility person,<br>I wish you would know me.</p>
-                </div>    
-            </h1>
-        </div>
+        <div class='stab tab1'><h1><div><span class='text2 tab1span1'>何でもやる人</span><span class='text3 tab1span1'>なんでも屋</span><p class='text2 tab1p1'>もちといいます。</p><p class='text3 tab1p2'>Hi everyone.I'm utility person,<br>I wish you would know me.</p></div></h1></div>
         <div class='stab'>
             <main>
                 <article>
-                    <h2 class='p2h2'>暇人だから<br>できること</h2>
+                    <h2 class='p2h2 hide'>暇人だから<br>できること</h2>
                     <div style='min-height:30vh;'> 
                         <div style='padding:0 10vw;'>
                             <p style='color:white;font-size: 6vw;' class='type hide'>
@@ -191,6 +178,7 @@ Twitter @motimoti_dev
     }else if(1*sw == l && currentPage != 2){//1 sw <= l && 2*sw >= l
         console.log('pagechanged 2');
         $(".type").removeClass('hide');
+        $(".p2h2").removeClass('hide');
         $(".type").t();
         console.log('t start');
         currentPage = 2;
