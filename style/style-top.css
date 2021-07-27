@@ -1,5 +1,5 @@
 html{font-size:62.5%}
-article{min-height:100vh;}	
+article{}	
 body {font-family:MyFont;margin:0;width:100%;}
 header{height:5rem;display:inline-flex;width:100%;}
 .barger-icon{height:5rem;position:absolute;display:inline-block;float:left;text-align:center}
