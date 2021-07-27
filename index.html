@@ -31,6 +31,7 @@ Twitter @motimoti_dev
     <meta name="msapplication-TileColor" content="#FAA500"/>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="script/app.js"></script>
+    <script src="script/t.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <style>
@@ -45,6 +46,9 @@ Twitter @motimoti_dev
     body {
         font-family: corp;
         background:black;
+    }
+    s , ins ,del{
+        text-decoration:none;
     }
 </style>
 <body>
@@ -76,11 +80,49 @@ Twitter @motimoti_dev
                 </div>
                 
             </h1>
-            <h2  style="color:white;font-size: 13vw;letter-spacing: 0.02em;margin-bottom: 10vw;font-weight:500;">
+            <h2  style="color:white;font-size: 13vw;letter-spacing: 0.02em;margin-bottom: 10vw;font-weight:500;text-align:left;padding: 0 10vw;" class='text3'>
                 暇人だから<br>
                 できること
             </h2>
+            <hr id='tar' color='black'>
+            <div style='min-height:30vh;'>    
+                <div class='type hide' style='padding: 0 10vw;'>
+                    <p style='color:white;font-size: 6vw;'>
+                        どうも！<br>
+                        <del>もち</del>⿻もち⿴🍣🍊といいます！<br>
+                        <s data-speed="10">  </s>            
+                            <ins>・Webサイト制作</ins><br>
+                            <ins>・イラスト制作</ins><br>
+                            <ins>・動画制作</ins><br>
+                        <s data-speed="40">  </s>
+                        何でもやります！<br>
+                        <kbd>デザイン<del>大嫌い、</del>苦手です、、、</kbd><br><br>
+                        <s data-speed="60"></s>
+                        簡単にやれることを紹介します<br>
+                        <span style='font-size: 4vw;'>下へ進んでください<del>↓</del><del>↓</del><del>↓</del><del>↓</del><del>↓</del><del>↓</del><del>↓</del><del>↓</del><del>↓</del></span>
+                        <hr id='tar1' color='black'>
+                    </p>
+                </div>
+            </div>
             <script>
+var typed = false;
+var times = 0;
+$(window).on('scroll' , function(){
+  if ($(".tar").is(":hidden")) {
+    //mietenai
+  } else {
+    //見えてたら
+    if(!typed && times == 0){
+        typed = true;
+        $(".type").removeClass('hide');
+        $(".type").t();
+        times = 1;
+    }
+  }
+  if ($(".tar1").is(":hidden")) {
+    $(".type").t('pause');
+  }
+});
 ScrollReveal().reveal('.text1', { 
   duration: 1600, 
   scale: 4,
@@ -98,10 +140,13 @@ ScrollReveal().reveal('.text3', {
   distance: '50px',
   reset: true   
 });
+
+//$(function(){$(".type").t();});
+
             </script>
         </article>
     </main>
-    <a href="#top" class="page_top"><img src="images/mini-up-icon.png" class="up-icon"></a>
+    <a href="#top" class="page_top"><img src="images/top-logo.png" class="up-icon"></a>
     
     <div class="modal-black modal-block hide modals" onclick="modalclose()"></div>
     <aside class="modal-parent hide modals">
