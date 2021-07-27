@@ -53,18 +53,12 @@ Twitter @motimoti_dev
     }
 </style>
 <body>
-    <header>
-        <a href="https://gootal-mobile.web.app/"><img src="images/header.png"></a><div class="barger-icon" onclick="modalopen(0)"><img src="images/barger-icon.png"></div>
-    </header>
-    <main>
-        <article>
-            <h1 style='z-index: 0;
-            padding: 0 10vw;
-            position: static;
-            margin-left: 0vw;
-            -webkit-transform: none;
-            -ms-transform: none;
-            transform: none;'>
+    <div style='display: flex;overflow-x: auto;scroll-snap-type: x mandatory;' id='scrolltab'>
+        <div style='flex: 0 0 100vw;height: auto;min-height:100vh;scroll-snap-align: start;'>
+            <header>
+                <a href="https://gootal-mobile.web.app/"><img src="images/header.png"></a><div class="barger-icon" onclick="modalopen(0)"><img src="images/barger-icon.png"></div>
+            </header>
+            <h1 style='z-index: 0;padding: 0 10vw;position: static;margin-left: 0vw;-webkit-transform: none;-ms-transform: none;transform: none;'>
                 <div style='margin:20vh 0;height: 57vh;position: relative;'>
                     <span style="color:white;font-size: 13vw;letter-spacing: 0.02em;margin-bottom: 10vw;" class='text2'>
                         何でもやる人
@@ -78,93 +72,127 @@ Twitter @motimoti_dev
                     <p style='margin:1vw 0;font-size: 1.8rem;letter-spacing: 0.01em;font-family: "Objective", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;color:white;' class='text3'>
                         Hi everyone.I'm utility person,<br>I wish you would know me.
                     </p>
-                </div>
-                
+                </div>    
             </h1>
-            <h2  style="color:white;font-size: 13vw;letter-spacing: 0.02em;margin-bottom: 10vw;font-weight:500;text-align:left;padding: 0 10vw;" class='text3'>
-                暇人だから<br>
-                できること
-            </h2>
-            <hr id='tar' color='black'>
-            <div style='min-height:30vh;'>    
-                <div class='type hide' style='padding: 0 10vw;'>
-                    <p style='color:white;font-size: 6vw;'>
-                        どうも！<br>
-                        <del>もち</del>⿻もち⿴🍣🍊といいます！<br>
-                        <s data-speed="10">  </s>            
-                            <ins>・Webサイト制作</ins><br>
-                            <ins>・イラスト制作</ins><br>
-                            <ins>・動画制作</ins><br>
-                        <s data-speed="40">  </s>
-                        何でもやります！<br>
-                        <kbd>デザイン<del>大嫌い、</del>苦手です、、、</kbd><br><br>
-                        <s data-speed="60"></s>
-                        簡単にやれることを紹介します<br>
-                        <span style='font-size: 4vw;'>下へ進んでください<del>↓</del><del>↓</del><del>↓</del><del>↓</del><del>↓</del><del>↓</del><del>↓</del><del>↓</del><del>↓</del></span>
-                        <hr id='tar1' color='black'>
-                    </p>
-                </div>
-            </div>
-            <script>
-var typed = false;
-var times = 0;
-$(window).on('scroll' , function(){
-  if ($(".tar").is(":hidden")) {
-    //mietenai
-  } else {
-    //見えてたら
-    if(!typed && times == 0){
-        typed = true;
-        $(".type").removeClass('hide');
-        $(".type").t();
-        times = 1;
-    }
-  }
-  if ($(".tar1").is(":hidden") && times == 1) {
-    $(".type").t('pause');
-    times = 2;
-  }
-});
-ScrollReveal().reveal('.text1', { 
-  duration: 1600, 
-  scale: 4,
-  reset: true
-});
-ScrollReveal().reveal('.text2', { 
-  duration: 1600, 
-  origin: 'left', 
-  distance: '50px',
-  reset: true   
-});
-ScrollReveal().reveal('.text3', { 
-  duration: 1600, 
-  origin: 'right', 
-  distance: '50px',
-  reset: true   
-});
-
-//$(function(){$(".type").t();});
-
-            </script>
-        </article>
-    </main>
-    <a href="#top" class="page_top"><img src="images/top-logo.png" class="up-icon"></a>
-    
-    <div class="modal-black modal-block hide modals" onclick="modalclose()"></div>
-    <aside class="modal-parent hide modals">
-        <div class="modal modal-block"onclick="javascript:void(0);">
-            <h2 style="margin:1rem 0;font-size:2rem;text-align:left;" id="modal-title"></h2>
-            <p id="modal-text"></p>
-            <a target="blank" id="modal-link">
-                <img src="" class="moti-modal-icon" id="modal-image">
-            </a>
-            <div class="modal-bottom" onclick="modalclose()">戻る</div>
         </div>
-    </aside>
-    <footer>
-        <p style="text-align:center">
-            Copy right©<span onclick="modalopen(0)">もち</span>
-        </p>
-    </footer>
+        <div style='flex: 0 0 100vw;height: auto;min-height:100vh;scroll-snap-align: start;'>
+            <main>
+                <article>
+                    
+                    <h2  style="color:white;font-size: 13vw;letter-spacing: 0.02em;margin-top: 20vw;margin-bottom: 10vw;font-weight:500;text-align:left;padding: 0 10vw;"><!---class='text3'>--->
+                        暇人だから<br>
+                        できること
+                        
+                    </h2>
+                    <div style='min-height:30vh;'> 
+                        <div style='padding: 0 10vw;'>
+                            
+                            <p style='color:white;font-size: 6vw;' class='type hide'>
+                                <s data-speed="7"></s>            
+                                どうも！<br>
+                                <del>もち</del>⿻もち⿴🍣🍊といいます！<br>
+                                    <ins>・Webサイト制作</ins><br>
+                                    <ins>・イラスト制作</ins><br>
+                                    <ins>・動画制作</ins><br>
+                                <s data-speed="30">  </s>
+                                何でもやります！<br>
+                                <kbd>デザイン<del>大嫌い、</del>苦手です、、、</kbd><br><br>
+                                <s data-speed="60"></s>
+                                簡単にやれることを紹介します<br>
+                                <span style='font-size: 4vw;'>右へ進んでください<del>→</del><del>⇒</del><del>㊨</del><del>☞</del><del>→</del><del>⇒</del><del>㊨</del><del>☞</del><del>→</del><del>⇒</del><del>㊨</del><del>☞</del></span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <script>
+                        var typed = false;
+                        var times = 0;
+                        var target = document.getElementById('scrolltab');
+                        var sw = window.screen.width;
+                        var currentPage = 1;
+
+                        function createEventScrollX(ele){
+                            this._past_scroll_left = 0;
+                            this.ev_scroll_x = new CustomEvent('scroll-x', {bubbles:true, cancelable:true});
+                            this.dispatch_callback = function(ev){
+                                var cuT = ev.currentTarget;
+                                var now_l = cuT.scrollLeft;
+                                if(now_l !== this.past_scroll_left){
+                                    ele.dispatchEvent(this.ev_scroll_x);
+                                    this.past_scroll_left = now_l;
+                                }
+                            };
+                            
+                            var events = ["scroll", "touchmove"];
+                            // var f = this.dispatch_callback;
+                            events.forEach(function(ev, idx, arr){
+                                ele.addEventListener(ev, this.dispatch_callback.bind(this), {capture:true, passive:true});
+                            }.bind(this));
+                        }
+
+                        var evX = new createEventScrollX(target);
+                        target.addEventListener("scroll-x", function(ev){
+                        //console.log(ev.currentTarget);
+                        var l = ev.currentTarget.scrollLeft;
+                        
+                        if(0 == l && currentPage != 1){//0
+                            console.log('pagechanged 1');
+                            currentPage = 1;
+                        }else if(1*sw == l && currentPage != 2){//1 sw <= l && 2*sw >= l
+                            console.log('pagechanged 2');
+                            $(".type").t();
+                            console.log('t start');
+                            currentPage = 2;
+                        }else if(2*sw == l && currentPage != 3){//1
+                            console.log('pagechanged 3');
+                            currentPage = 3;
+                        }
+                        console.log(l);
+                        }, {capture:true, passive:true});
+
+
+                        ScrollReveal().reveal('.text1', { 
+                        duration: 1600, 
+                        scale: 4,
+                        reset: true
+                        });
+                        ScrollReveal().reveal('.text2', { 
+                        duration: 1600, 
+                        origin: 'left', 
+                        distance: '50px',
+                        reset: true   
+                        });
+                        ScrollReveal().reveal('.text3', { 
+                        duration: 1600, 
+                        origin: 'right', 
+                        distance: '50px',
+                        reset: true   
+                        });
+
+                        //$(function(){$(".type").t();});
+
+                    </script>
+                </article>
+            </main>
+        </div>
+        <a href="#top" class="page_top"><img src="images/top-logo.png" class="up-icon"></a>
+        
+        <div class="modal-black modal-block hide modals" onclick="modalclose()"></div>
+        <aside class="modal-parent hide modals">
+            <div class="modal modal-block"onclick="javascript:void(0);">
+                <h2 style="margin:1rem 0;font-size:2rem;text-align:left;" id="modal-title"></h2>
+                <p id="modal-text"></p>
+                <a target="blank" id="modal-link">
+                    <img src="" class="moti-modal-icon" id="modal-image">
+                </a>
+                <div class="modal-bottom" onclick="modalclose()">戻る</div>
+            </div>
+        </aside>
+        <footer>
+            <p style="text-align:center">
+                Copy right©<span onclick="modalopen(0)">もち</span>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
