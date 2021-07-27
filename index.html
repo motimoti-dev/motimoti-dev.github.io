@@ -87,16 +87,17 @@ Twitter @motimoti_dev
                     <div style='min-height:30vh;'> 
                         <div style='padding: 0 10vw;'>
                             
-                            <p style='color:white;font-size: 6vw;' class='type'>
-                                <s data-speed="7"></s>            
-                                どうも！<br>
-                                <del>もち</del>⿻もち⿴🍣🍊といいます！<br>
-                                    <ins>・Webサイト制作</ins><br>
-                                    <ins>・イラスト制作</ins><br>
-                                    <ins>・動画制作</ins><br>
-                                <s data-speed="30">  </s>
-                                何でもやります！<br>
-                                <kbd>デザイン<del>大嫌い、</del>苦手です、、、</kbd><br><br>
+                            <p style='color:white;font-size: 6vw;' class='type hide'>
+                                <s data-speed="30">
+                                    どうも！<br>
+                                    <del>もち</del>⿻もち⿴🍣🍊といいます！<br>
+                                        <ins>・Webサイト制作</ins><br>
+                                        <ins>・イラスト制作</ins><br>
+                                        <ins>・動画制作</ins><br>
+                                    <s data-speed="30">  </s>
+                                    何でもやります！<br>
+                                    <kbd>デザイン<del>大嫌い、</del>苦手です、、、</kbd><br><br>
+                                </s>
                                 <s data-speed="60"></s>
                                 簡単にやれることを紹介します<br>
                                 <span style='font-size: 4vw;'>右へ進んでください<del>→</del><del>⇒</del><del>㊨</del><del>☞</del><del>→</del><del>⇒</del><del>㊨</del><del>☞</del><del>→</del><del>⇒</del><del>㊨</del><del>☞</del></span>
@@ -140,6 +141,7 @@ Twitter @motimoti_dev
                             currentPage = 1;
                         }else if(1*sw == l && currentPage != 2){//1 sw <= l && 2*sw >= l
                             console.log('pagechanged 2');
+                            $(".type").removeClass('hide');
                             $(".type").t();
                             console.log('t start');
                             currentPage = 2;
