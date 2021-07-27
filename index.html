@@ -27,6 +27,7 @@ Twitter @motimoti_dev
     <meta name="msapplication-square150x150logo" content="images/top-logo.png"/>
     <meta name="msapplication-wide310x150logo" content="images/top-logo.png"/>
     <meta name="msapplication-square310x310logo" content="images/top-logo.png"/>
+    <meta name="theme-color" content="black">
     <link rel="stylesheet" href="style/style-top.css">
     <meta name="msapplication-TileColor" content="#FAA500"/>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -119,8 +120,9 @@ $(window).on('scroll' , function(){
         times = 1;
     }
   }
-  if ($(".tar1").is(":hidden")) {
+  if ($(".tar1").is(":hidden") && times == 1) {
     $(".type").t('pause');
+    times = 2;
   }
 });
 ScrollReveal().reveal('.text1', { 
